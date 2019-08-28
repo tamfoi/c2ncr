@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>文字列 → 数値文字参照</title>
+    <meta name="description" content="文字列→数値文字参照" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+  <body>
+    <h1>文字列→数値文字参照</h1>
+    <div class="inputArea">
+      <p>変換したい文字列</p>
+      <textarea id="characterTextArea"></textarea>
+    </div>
+    <div class="resultArea">
+      <div class="resultAreaItem">
+        <p>16進数数値文字参照</p>
+        <textarea id="hexTextArea" readonly></textarea>
+        <button id="hexCopyBtn">コピーする</button>
+        <div class="debugWrapper">
+          <p>&#x21e9;確認用&#x21e9;</p>
+          <div id="hexDebug"></div>
+        </div>
+      </div>
+      <div class="resultAreaItem">
+        <p>content(CSS)用16進数数値文字参照</p>
+        <textarea id="contentTextArea" readonly></textarea>
+        <button id="contentCopyBtn">コピーする</button>
+        <div class="debugWrapper">
+          <p>&#x21e9;確認用&#x21e9;</p>
+          <div id="contentDebug"></div>
+        </div>
+      </div>
+    </div>
+    <p class="note">動作確認ブラウザ：Google Chrome 76.0.3809.132</p>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+  </body>
+</html>

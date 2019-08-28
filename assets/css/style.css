@@ -1,0 +1,52 @@
+h1{
+  text-align: center;
+}
+textarea{
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  height: 180px;
+}
+button{
+  margin-top: 10px;
+  width: 40%;
+  padding: 20px;
+}
+
+.inputArea{
+  text-align: center;
+  width: 65%;
+  margin: 40px auto 0 auto;
+}
+
+.resultArea{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+.resultArea .resultAreaItem{
+  text-align: center;
+  width: 45%;
+}
+.resultArea .resultAreaItem::before{
+  content: "\21e9";
+  font-size: 80px;
+  display: block;
+}
+
+.debugWrapper{
+  margin-top: 50px;
+}
+#hexDebug{
+  word-wrap: break-word;
+}
+#contentDebug::before{
+  display: block;
+  word-break: break-all;
+}
+
+.note{
+  margin: 30px 0 0 0;
+  padding-top: 20px;
+  border-top: 1px dashed black;
+}
